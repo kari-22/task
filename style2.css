@@ -1,0 +1,28 @@
+html, 
+body{
+    margin: 0;
+    height: 100%;
+    background: #F5FDFF;
+}
+.title {
+    height: max-content;
+    border: 3px solid #0EB29A;
+    background: #DDF0C2;
+    padding: 1% 2% 1% 2%;
+    text-align:center;
+    font-size: 32px;
+    font-family: 'Lucida Sans Unicode';
+}
+.text{
+    padding: 1% 2% 1% 2%;
+    font-size: 24px;
+    font-family: 'Lucida Sans Unicode';
+    text-align:center;
+}
+select{
+    width: 100px;
+    height: 32px;
+    font-size: 16px;
+    background: #DDF0C2;
+    text-align:center;
+}
