@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+</head>
+<body>
+ 
+    <div class="title"> Підбір ціни товару для отримання бажаного прибутку</div>
+    <div class="text">
+    <p>Оберіть бажаний прибуток:</p>
+    <select name="" id="b">
+        <option value="3600">3600 грн</option>
+        <option value="9600">9600 грн</option>
+        <option value="49600">49600 грн</option>
+        <option value="99600">99600 грн</option>
+    </select>
+
+    <p>Оберіть кількість проданих одиниць:</p>
+    <select name="" id="a">
+        <option value="200">200 шт.</option>
+        <option value="500">500 шт.</option>
+        <option value="1000">1000 шт.</option>
+        <option value="1300">1300 шт.</option>
+    </select>
+    
+    <p>Оберіть сукупні витрати:</p>
+    <select name="" id="c">
+        <option value="400">4000 грн</option>
+        <option value="7500">7500 грн</option>
+        <option value="10000">10000 грн</option>
+        <option value="13000">13000 грн</option>
+    </select>
+    <p id="result"></p>
+</div>
+    <script>
+        val_a = document.getElementById("a");
+        res = document.getElementById("result");
+        val_a.addEventListener("change",func_b);
+        val_b = document.getElementById("b");
+        res = document.getElementById("result");
+        val_b.addEventListener("change",func_b);
+        val_c = document.getElementById("c");
+        res = document.getElementById("result");
+        val_c.addEventListener("change",func_b);
+        function func_b(){
+            console.log(val_a.value);
+            a = parseInt(val_a.value);
+            console.log(val_b.value);
+            b= parseInt(val_b.value);
+            console.log(val_c.value);
+            c= parseInt(val_c.value);
+            console.log(a);
+            console.log(b);
+            console.log(c);
+            v = b+c;
+            p = v/a;
+            str = " Для такого прибутку оптимальна ціна за одиницю продукції: "+p+"грн";
+            res.innerHTML=str;
+        }
+    
+    </script>
+</body>
+</html>
